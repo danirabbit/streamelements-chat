@@ -34,13 +34,13 @@
   "fontColor": {
     "type": "colorpicker",
     "label": "Font Color",
-    "value": "rgba(255,255,255,1)",
+    "value": "#333",
     "group": "Typography"
   },
   "textShadow": {
     "type": "text",
     "label": "Text shadow",
-    "value": "rgb(0, 0, 0) 1px 1px 1px",
+    "value": "none",
     "group": "Typography"
   },
   "emoteSize": {
@@ -62,7 +62,7 @@
   "nickColor": {
     "type": "dropdown",
     "label": "Nickname color:",
-    "value": "user",
+    "value": "customNickColor",
     "options": {
       "user": "as on twitch",
       "messagecolor": "same as message text",
@@ -74,7 +74,7 @@
   "customNickColor": {
     "type": "colorpicker",
     "label": "Custom nickname color:",
-    "value": "rgba(0,255,0,1)",
+    "value": "#1C843D",
     "group": "Typography"
   },
   "displayBadges": {
@@ -125,16 +125,28 @@
     "value": "StreamElements,OtherBot",
     "group": "Settings"
   },
+  "backgroundRadius": {
+    "type": "text",
+    "label": "Background radius:",
+    "value": "1em",
+    "group": "Settings"
+  },
   "backgroundColor": {
     "type": "colorpicker",
     "label": "Background color:",
-    "value": "rgba(0,0,0,0)",
+    "value": "#fff",
+    "group": "Settings"
+  },
+  "accentColor": {
+    "type": "colorpicker",
+    "label": "Accent color:",
+    "value": "#1C843D",
     "group": "Settings"
   },
   "animationIn": {
     "type": "dropdown",
     "label": "Animation In:",
-    "value": "none",
+    "value": "bounceInRight",
     "options": {
       "none": "None",
       "bounceIn": "bounceIn",
@@ -176,7 +188,7 @@
   "animationOut": {
     "type": "dropdown",
     "label": "Animation Out:",
-    "value": "none",
+    "value": "fadeOut",
     "options": {
       "none": "None",
       "bounceOut": "bounceOut",
