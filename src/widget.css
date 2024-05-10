@@ -23,7 +23,9 @@
 .message-row{
     background-color: {{backgroundColor}};
     border-radius: {{backgroundRadius}};
-    box-shadow: rgba(0, 0, 0, 0.3) 0.2em 0.2em 0.4em;
+    box-shadow:
+      rgba(0, 0, 0, 0.3) 0.1em 0.1em 0.25em,
+      rgba(0, 0, 0, 0.3) 0.2em 0.2em 1em;
     flex: 0 0 auto;
     margin-left: 1em;
     margin-bottom: 2em;
