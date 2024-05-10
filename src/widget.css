@@ -35,6 +35,7 @@
 .user-box {
     display: block;
     font-size: {{fontSize}}px;
+    margin-bottom: 0.25em;
 }
 
 .user-box > span {
