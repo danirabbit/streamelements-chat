@@ -23,7 +23,7 @@
 .message-row{
     background-color: {{backgroundColor}};
     border-radius: {{backgroundRadius}};
-    box-shadow: {{accentColor}} 0.2em 0.2em 0 0.4em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.2em 0.2em 0.4em;
     flex: 0 0 auto;
     margin-left: 1em;
     margin-bottom: 2em;
@@ -32,19 +32,20 @@
     width: calc(100% - 2em - 2em);
 }
 
-.badge{
-    display:{{displayBadges}};
-    height:{{fontSize}}px;
-}
-
-.user-box{
+.user-box {
     display: block;
     font-size: {{fontSize}}px;
 }
 
-.user-box > span{
+.user-box > span {
     font-size: {{fontSize}}px;
     font-weight: 600;
+    margin-right: 0.25em;
+}
+
+.badge {
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
 }
 
 .user-message{

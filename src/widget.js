@@ -97,7 +97,7 @@ window.addEventListener('onEventReceived', function (obj) {
         badge = data.badges[i];
         badges += `<img alt="" src="${badge.url}" class="badge ${badge.type}-icon"> `;
     }
-    let username = data.displayName;
+    let username = data.displayName + ":";
     if (nickColor === "user") {
         const color = data.displayColor !== "" ? data.displayColor : "#" + (md5(username).slice(26));
         username = `<span style="color:${color}">${username}</span>`;
@@ -211,7 +211,7 @@ function addMessage(username, badges, message, isAction, uid, msgId) {
 
     const element = $.parseHTML(`
     <div data-sender="${uid}" data-msgid="${msgId}" class="message-row {animationIn} animated" id="msg-${totalMessages}">
-        <div class="user-box ${actionClass}">${badges}${username}</div>
+        <div class="user-box ${actionClass}">${username}${badges}</div>
         <div class="user-message ${actionClass}">${message}</div>
     </div>`);
     if (addition === "append") {

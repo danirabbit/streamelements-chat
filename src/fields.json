@@ -137,12 +137,6 @@
     "value": "#fff",
     "group": "Settings"
   },
-  "accentColor": {
-    "type": "colorpicker",
-    "label": "Accent color:",
-    "value": "#1C843D",
-    "group": "Settings"
-  },
   "animationIn": {
     "type": "dropdown",
     "label": "Animation In:",
